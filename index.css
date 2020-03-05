@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  color:white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+}
+
+.logo {
+  width: 228px;
+  background-color: antiquewhite;
+}
+
+.nav-bar {
+  width: 52px;
+  background-color: black;
+}
+
+.donate-button {
+  width: 95px;
+  background-color: antiquewhite;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.nth:nth-child(odd) {
+  background-color: white;
+  height: 23rem;
+}
+.nth:nth-child(even) {
+  background-color: antiquewhite;
+  height: 23rem;
+}
+
+.ath:nth-child(odd) {
+  background-color: black;
+  height: 23rem;
+}
+.ath:nth-child(even) {
+  background-color: grey;
+  height: 23rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+} 
