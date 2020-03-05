@@ -39,6 +39,13 @@ body {
   height: fit-content;
 }
 
+.self-portrait-container {
+  background-image: url(pictures/cindycutout.jpeg);
+  background-size: cover;
+  height: 25rem;
+  background-position: 50% 50%;
+}
+
 .sign-up {
   padding-left: 2rem;
   padding-right: 2rem;
