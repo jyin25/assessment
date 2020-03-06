@@ -56,7 +56,7 @@
 }
 
 .overlay-text {
-  white-space: nowrap; 
+   
   color: white;
   font-size: 20px;
   position: absolute;
@@ -66,10 +66,14 @@
   width: 100%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .overlay-text > p {
   word-wrap: break-word;
+  text-align: center;
 }
 
 .top-box {
