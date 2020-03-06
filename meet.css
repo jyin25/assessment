@@ -19,14 +19,76 @@
   height: 20rem;
 }
 
-.aboutme-description-container {
+.aboutme-box-container {
   height: 23rem;
   margin: 1rem 0 1rem 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
 }
 
 
-.aboutme-description-container:nth-child(odd) {
+.aboutme-box-container:nth-child(odd) {
   background-color: #D2D6DB;
+}
+
+.box-pic-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box-3rd-pic {
+  height: 15rem;
+  margin: .5rem 0 .5rem 0;
+}
+
+.box-3rd {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #D2D6DB;
+} 
+
+.box-3rd-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-pic {
+  width: 100px;
+  height: 100px;
+  margin: .4rem 0 .4rem 0;
+}
+
+.aboutme-description:nth-child(even) {
+  margin-left: 2rem;
+}
+
+.aboutme-description:nth-child(odd) {
+  margin-right: 2rem;
+}
+
+.aboutme-description>h1, .aboutme-description>p  {
+  word-wrap: break-word;
+}
+
+.aboutme-description>h1 {
+  color: black;
+  margin: 0;
+}
+
+.aboutme-description>p {
+  color: red;
+}
+
+.footer-container {
+  top: 4rem;
 }
