@@ -1,0 +1,54 @@
+.volunteer-main-container {
+  display: flex; 
+  position: relative;
+  flex-direction: column;
+  background-color: #233F94;
+  padding: 1rem 1rem 1rem 1rem;
+  height: 100vh;
+}
+
+.volunteer-main-container > h1 {
+  color: black;
+  text-align: center;
+  color: white;
+}
+
+.volunteer-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+  background-color: white;
+  height: 60vh;
+  justify-content: space-evenly;
+  border-radius: 5px;
+
+}
+
+.volunteer-input-box {
+  height: 5.5vh;
+  color: black;
+  border-radius: 3px;
+}
+
+.volunteer-submit-box {
+  height: 8vh;
+  background-color: #039946;
+  border-radius: 5px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
