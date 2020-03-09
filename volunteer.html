@@ -4,24 +4,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="volunteer.css">
+  <link rel="stylesheet" href="index.css">
 
   <title>Document</title>
 </head>
 <body>
   <header class="header-container">
-    <div class="logo">
-      <img src="pictures/logo.jpeg">
+    <a class="logo" href="index.html"></a>
+    <div type="button" class="nav-bar" >☰</div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a class="nav-color" href="index.html">HOME</a></li>
+        <li><a class="nav-color" href="meet.html">MEET CINDY</a></li>
+        <li><a class="nav-color" href="priority.html">PRIORITIES</a></li>
+        <li><a class="nav-color" href="volunteer.html">VOLUNTEER</a></li>
+      </ul>
+    </nav>
+    <div class="nav-donate-button">
+      <p>DONATE</p>
     </div>
   </header>
+  <div class="modal" style="display: none" value="1">
+    <p class="exit-menu">x</p>
+    <ul class=menu-options>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="meet.html">MEET CINDY</a></li>
+      <li><a href="priority.html">PRIORITIES</a></li>
+      <li><a href="volunteer.html">VOLUNTEER</a></li>
+    </ul>
+    <button>DONATE</button>
+    <ul class="icon-menu-container">
+      <li class="social-icon"><i class="fab fa-instagram"></i></li>
+      <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+      <li class="social-icon"><i class="fab fa-twitter"></i></li>
+    </ul>
+  </div>
+  
   <main class="volunteer-main-container">
+    <div class="volunteer-pic"></div>
+    <div class="volunteer-container">
       <h1>Volunteer</h1>
       <form class="volunteer-form-container">
-        <input class="volunteer-input-box">
-        <input class="volunteer-input-box">
-        <input class="volunteer-input-box">
-        <input class="volunteer-input-box">
+        <input class="volunteer-input-box" type="text" placeholder="Name">
+        <input class="volunteer-input-box" type="text" placeholder="Email">
+        <input class="volunteer-input-box" type="text" placeholder="Zip Code">
         <button class="volunteer-submit-box" type="submit">SUBMIT</button>
       </form>
+    </div>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

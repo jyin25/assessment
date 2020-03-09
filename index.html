@@ -3,127 +3,163 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <script type='text/javascript' src='store.js'></script>
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
+<body value="sdf">
   <header class="header-container">
-    <div class="logo">
-      <img src="pictures/logo.jpeg">
-    </div>
-    <button type="button" class="nav-bar" >X</button>
-    <nav style="display: none"></nav>
+    <a class="logo" href="index.html"></a>
+    <div type="button" class="nav-bar" >☰</div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a class="nav-color" href="index.html">HOME</a></li>
+        <li><a class="nav-color" href="meet.html">MEET CINDY</a></li>
+        <li><a class="nav-color" href="priority.html">PRIORITIES</a></li>
+        <li><a class="nav-color" href="volunteer.html">VOLUNTEER</a></li>
+      </ul>
+    </nav>
     <div class="nav-donate-button">
-      DONATE
+      <p>DONATE</p>
     </div>
   </header>
-  <div class="modal" style="display: ;">
-    <p>x</p>
-    <ul>
+  <div class="modal" style="display: none" value="1">
+    <p class="exit-menu">x</p>
+    <ul class=menu-options>
       <li><a href="index.html">HOME</a></li>
-      <li><a href="/meet/index.html">MEET CINDY</a></li>
+      <li><a href="meet.html">MEET CINDY</a></li>
       <li><a href="priority.html">PRIORITIES</a></li>
       <li><a href="volunteer.html">VOLUNTEER</a></li>
     </ul>
     <button>DONATE</button>
+    <ul class="icon-menu-container">
+      <li class="social-icon"><i class="fab fa-instagram"></i></li>
+      <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+      <li class="social-icon"><i class="fab fa-twitter"></i></li>
+    </ul>
   </div>
+
   <main class="main-container">
     <section class="portrait-container">
+
+      <div class="sign-up-media-query">
+        <h1>Get Involved</h1>
+        <h2>JOIN US</h2>
+        <form class="media-query-form">
+          <div class="media-query-input-container">
+            <input class="sign-up-media-input" type="text" placeholder="Name"/>
+            <input class="sign-up-media-input" type="text" placeholder="Email"/>
+          </div>
+          <button class="sign-up-media-submit-button" type="submit">GET INVOLVED</button>
+        </form>
+      </div>
       <div class="portrait"></div>
       <div class="portrait-text">
-        <p>IT'S TIME</p>
-        <p>FOR</p>
-        <p>ACTION</p>
+        <h3>IT'S TIME</h3>
+        <h3>FOR</h3>
+        <h3>ACTION</h3>
+      </div>
+      <div class="icon-media-query" style="display: none;">
+        <ul class="icon-container">
+          <li class="social-icon"><i class="fab fa-instagram"></i></li>
+          <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+          <li class="social-icon"><i class="fab fa-twitter"></i></li>
+        </ul>
       </div>
     </section>
-    <section class="nth sign-up">
-        <p>Get Involved</p>
-        <p>JOIN US</p>
+    <section class="sign-up">
+        <h1>Get Involved</h1>
+        <h2>JOIN US</h2>
         <form id="sign-up-form">
           <div class="input-box">
-            <input class="name" type="text"/>
-            <input class="email" type="text"/>
+            <input class="name" type="text" placeholder="Name"/>
+            <input class="email" type="text" placeholder="Email"/>
           </div>
-          <button class="form-submit-button" type="submit"></button>
+          <button class="form-submit-button" type="submit">GET INVOLVED</button>
         </form>
         <ul class="icon-container">
-          <li class="social-icon"></li>
-          <li class="social-icon"></li>
-          <li class="social-icon"></li>
+          <li class="social-icon"><i class="fab fa-instagram"></i></li>
+          <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+          <li class="social-icon"><i class="fab fa-twitter"></i></li>
         </ul>
     </section>
     <section>
       <div class="volunteer-contribute-buttons">
-        <p class="volunteer-button">Volunteer</p>
-        <p class="contribute-button">Contribute</p>
+        <h2 class="volunteer-button">Volunteer</h2>
+        <h2 class="contribute-button">Contribute</h2>
       </div>
     </section>
-      <section class="nth meet">
-        <div class="meetme-inside-container">
-          <p style="text-align: center;">Meet Cindy</p>
-          <ul class="meetme-list">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-        </div>
-        <div class="learn-more">
-          <p style="color: #233F94">Learn More</p>
+
+      <section class="meet">
+        <div class="side-image"></div>
+        <div class="meet-media-query">
+          <div class="meetme-inside-container meet-main-box">
+            <h1 style="text-align: center;">Meet Cindy</h1>
+            <ul class="meetme-list">
+            </ul>
+          </div>
+          <div class="learn-more learn-more-media-query">
+            <a href="meet.html"><p class="learn-more-p">Learn More</p></a>
+          </div>
         </div>
       </section>
-      <section class="nth priorities">
-        <div class="priority-inside-container">
-          <p style="text-align: center; color: black;">Priorities</p>
+
+      <section class="priorities">
+        <div class="priority-inside-container priority-main-box">
+          <h1 style="text-align: center; color: #05519E;">Priorities</h1>
           <ul class="priority-list">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
           </ul>
         </div>
         <div class="learn-more">
-          <p style="color: #233F94">Learn More</p>
+          <a href="priority.html"><p style="color: #233F94">Learn More</p></a>
         </div>
       </section>
-      <section class="nth donate">
+
+      <section class="donate">
         <ul>
-          <li><button class="donate-button"></button></li>
-          <li><button class="donate-button"></button></li>
-          <li><button class="donate-button"></button></li>
-          <li><button class="donate-button"></button></li>
-          <li><button class="donate-button"></button></li>
-          <li><button class="donate-button"></button></li>
+          <li><a><button class="donate-button">$5</button></a></li>
+          <li><a><button class="donate-button">$25</button></a></li>
+          <li><a><button class="donate-button">$50</button></a></li>
+          <li><a><button class="donate-button">$100</button></a></li>
+          <li><a><button class="donate-button">Donate</button></a></li>
         </ul>
       </section>
       <section class="twitter-feed">
-        <p style="color: black; text-align: center; padding: 1rem 4rem 0rem 4rem;">Latest from the campaign</p>
-        <div class="twitter-top twitter-box"></div>
-        <div class="twitter-bottom twitter-box"></div>
+        <h1 style="color: black; text-align: center;">Latest from the campaign</h1>
+        <div class="twitter-container">
+          <div class="twitter-top twitter-box"><i class="fab fa-twitter"></i></div>
+          <div class="twitter-bottom twitter-box"><i class="fab fa-twitter"></i></div>
+      </div>
       </section>
   </main>
+
   <footer class="footer-container">
     <section class="footer-sign-up">
-      <p>Get Involved</p>
-      <p>JOIN US</p>
+      <h1>Get Involved</h1>
+      <h2>JOIN US</h2>
         <form id="sign-up-form">
           <div class="input-box">
-            <input type="text"/>
-            <input type="text"/>
+            <input type="text" placeholder="Name" class="name"/>
+            <input type="text" placeholder="Email" class="email"/>
           </div>
-          <button class="form-submit-button" type="submit"></button>
+          <button class="form-submit-button" type="submit">GET INVOLVED</button>
         </form>
-        </section>
-    <section class="volunteer-contribute-footer">
-      <div class="footer-icon-container">
-        <img class="footer-logo" src="pictures/logo.jpeg">
-      </div>
-      <button class="footer-volunteer-button"></button>
-      <button class="footer-contribute-button"></button>
     </section>
-    <section class="designed-by">
-      <p>Created by Jun Yin</p>
-      <div></div>
-    </section>
+    <div class="footer-media-query">
+      <section class="volunteer-contribute-footer">
+        <div class="footer-icon-container">
+          <img class="footer-logo" src="pictures/logo.jpeg">
+        </div>
+        <button class="footer-volunteer-button">CONTRIBUTE</button>
+        <button class="footer-contribute-button">VOLUNTEER</button>
+      </section>
+      <section class="designed-by">
+        <p>Created by Jun Yin</p>
+        <div></div>
+      </section>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="priority.css">
+  <script type='text/javascript' src='store.js'></script>
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header-container">
+    <a class="logo" href="index.html"></a>
+    <div type="button" class="nav-bar" >☰</div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a class="nav-color" href="index.html">HOME</a></li>
+        <li><a class="nav-color" href="meet.html">MEET CINDY</a></li>
+        <li><a class="nav-color" href="priority.html">PRIORITIES</a></li>
+        <li><a class="nav-color" href="volunteer.html">VOLUNTEER</a></li>
+      </ul>
+    </nav>
+    <div class="nav-donate-button">
+      <p>DONATE</p>
+    </div>
+  </header>
+  <div class="modal" style="display: none" value="1">
+    <p class="exit-menu">x</p>
+    <ul class=menu-options>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="meet.html">MEET CINDY</a></li>
+      <li><a href="priority.html">PRIORITIES</a></li>
+      <li><a href="volunteer.html">VOLUNTEER</a></li>
+    </ul>
+    <button>DONATE</button>
+    <ul class="icon-menu-container">
+      <li class="social-icon"><i class="fab fa-instagram"></i></li>
+      <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+      <li class="social-icon"><i class="fab fa-twitter"></i></li>
+    </ul>
+  </div>
+
+
+  <main class="priorities-container">  
+    <div class="title">
+      <h1>Water Contamination</h1>
+    </div>
+    <div class="priority-information">
+      
+      <p>Our sewer lines are degrading and leaking into ground water that runs into Biscayne Bay. This is one of our most pressing and immediate needs. We must maintain and expand our county water and sewer systems. Thousands of homeowners in District 7 have no access to the county potable water or sewer system. The current failure to address this lack of basic infrastructure puts our residents at risk of a public health crisis. Additionally, the looming impact of sea level rise and the resulting salt water intrusion continues to threaten the well water that many residents must rely on. Likewise, the rising water table is causing septic tanks to fail, compounding the need for expanded county sewer systems. The contamination of Biscayne Bay threatens our aquifer, our source of drinking water and our access to clean water for our families’ recreation, as well as our tourism industry. I am attending Biscayne Bay Task Force meetings regularly, and have spoken out with a sense of urgency to immediately invest in and repair our failing water and sewer infrastructure.</p>
+      <button class="priority-view-all-button"><a href="priority.html">View all issues</a></button>
+    </div>
+  </main>
+
+
+
+  <footer class="footer-container">
+    <section class="footer-sign-up">
+      <h1>Get Involved</h1>
+      <h2>JOIN US</h2>
+        <form id="sign-up-form">
+          <div class="input-box">
+            <input type="text" placeholder="Name" class="name"/>
+            <input type="text" placeholder="Email" class="email"/>
+          </div>
+          <button class="form-submit-button" type="submit">GET INVOLVED</button>
+        </form>
+    </section>
+    <div class="footer-media-query">
+      <section class="volunteer-contribute-footer">
+        <div class="footer-icon-container">
+          <img class="footer-logo" src="pictures/logo.jpeg">
+        </div>
+        <button class="footer-volunteer-button">CONTRIBUTE</button>
+        <button class="footer-contribute-button">VOLUNTEER</button>
+      </section>
+      <section class="designed-by">
+        <p>Created by Jun Yin</p>
+        <div></div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

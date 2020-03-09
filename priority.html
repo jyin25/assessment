@@ -4,154 +4,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="priority.css">
+  <script type='text/javascript' src='store.js'></script>
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header class="header-container">
-    <div class="logo">
-      <img src="pictures/logo.jpeg">
-    </div>
-    <button type="button" class="nav-bar" >X</button>
-    <nav style="display: none"></nav>
+    <a class="logo" href="index.html"></a>
+    <div type="button" class="nav-bar" >☰</div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a class="nav-color" href="index.html">HOME</a></li>
+        <li><a class="nav-color" href="meet.html">MEET CINDY</a></li>
+        <li><a class="nav-color" href="priority.html">PRIORITIES</a></li>
+        <li><a class="nav-color" href="volunteer.html">VOLUNTEER</a></li>
+      </ul>
+    </nav>
     <div class="nav-donate-button">
-      DONATE
+      <p>DONATE</p>
     </div>
   </header>
-  <div class="modal" style="display: none;">
-    <p>x</p>
-    <ul>
+  <div class="modal" style="display: none" value="1">
+    <p class="exit-menu">x</p>
+    <ul class=menu-options>
       <li><a href="index.html">HOME</a></li>
       <li><a href="meet.html">MEET CINDY</a></li>
-      <li>PRIORITIES</li>
+      <li><a href="priority.html">PRIORITIES</a></li>
+      <li><a href="volunteer.html">VOLUNTEER</a></li>
     </ul>
     <button>DONATE</button>
+    <ul class="icon-menu-container">
+      <li class="social-icon"><i class="fab fa-instagram"></i></li>
+      <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+      <li class="social-icon"><i class="fab fa-twitter"></i></li>
+    </ul>
   </div>
 
 
-  <main class="priority-main-container">
+  <main class="priority-m-container">
+    <section class="portrait-container">
 
-    <section class="priority-portrait-container">
-      <div class="priority-portrait"></div>
-      <div class="portrait-text"></div>
-    </section>
-    <section>
-      <div class="priority-container">
+      <div class="sign-up-media-query">
+        <h1>Get Involved</h1>
+        <h2>JOIN US</h2>
+        <form class="media-query-form">
+          <div class="media-query-input-container">
+            <input class="sign-up-media-input" type="text" placeholder="Name"/>
+            <input class="sign-up-media-input" type="text" placeholder="Email"/>
+          </div>
+          <button class="sign-up-media-submit-button" type="submit">GET INVOLVED</button>
+        </form>
+      </div>
+      <div class="portrait"></div>
 
-        <div class="priority-box">
-          <div class="top-box">
-            <img src="pictures/5BF534BB89A749469B19C0D39CCED4E1.jpeg">
-          </div>
-          <div class="bottom-box">
-            <div class="bottom-description">
-              <h1>Endless Traffic Gridlock</h1>
-            </div>
-            <div class="bottom-button-container">
-              <div class="bottom-button" style="background-color: #05519E;">
-                <div class="arrow-right"></div>
-              </div>
-            </div>
-          </div>
-          <div class="overlay" style="background-color: #05519E;">
-            <div class="overlay-text" style="color:black;">
-              <p>asdf sd fs dfa sdf safd sadf sad fsa df sadf sadf sda fsad fsa df sdaf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="priority-box">
-          <div class="top-box">
-            <img src="pictures/storm3.jpeg">
-          </div>
-          <div class="bottom-box">
-            <div class="bottom-description">
-              <h1>Flooding and Rising Seas</h1>
-            </div>
-            <div class="bottom-button-container">
-              <div class="bottom-button" style="background-color: #6596E6;">
-                <div class="arrow-right"></div>
-              </div>
-            </div>
-          </div>
-          <div class="overlay" style="background-color: #6596E6;">
-            <div class="overlay-text" style="color:black;">
-              <p>asdf sd fs dfa sdf safd sadf sad fsa df sadf sadf sda fsad fsa df sdaf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="priority-box">
-          <div class="top-box">
-            <img src="pictures/watercont.jpeg">
-          </div>
-          <div class="bottom-box">
-            <div class="bottom-description">
-              <h1>Water Contamination</h1>
-            </div>
-            <div class="bottom-button-container">
-              <div class="bottom-button" style="background-color: #039946 ;">
-                <div class="arrow-right"></div>
-              </div>
-            </div>
-          </div>
-          <div class="overlay" style="background-color: #039946;">
-            <div class="overlay-text" style="color:black;">
-              <p>asdf sd fs dfa sdf safd sadf sad fsa df sadf sadf sda fsad fsa df sdaf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="priority-box">
-          <div class="top-box">
-            <img src="pictures/communityleadership-lerner.jpeg">
-          </div>
-          <div class="bottom-box">
-            <div class="bottom-description">
-              <h1>Community Leadership</h1>
-            </div>
-            <div class="bottom-button-container">
-              <div class="bottom-button" style="background-color: #8E2428;">
-                <div class="arrow-right"></div>
-              </div>
-            </div>
-          </div>
-          <div class="overlay" style="background-color: #8E2428;">
-            <div class="overlay-text" style="color:black;">
-              <p>asdf sd fs dfa sdf safd sadf sad fsa df sadf sadf sda fsad fsa df sdaf</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="icon-media-query" style="display: none;">
+        <ul class="icon-container">
+          <li class="social-icon"><i class="fab fa-instagram"></i></li>
+          <li class="social-icon"><i class="fab fa-facebook-square"></i></li>
+          <li class="social-icon"><i class="fab fa-twitter"></i></li>
+        </ul>
       </div>
     </section>
-
+    <section class="priority-main-container"></section>
   </main>
-
 
 
 
   <footer class="footer-container">
     <section class="footer-sign-up">
-      <p>Get Involved</p>
-      <p>JOIN US</p>
+      <h1>Get Involved</h1>
+      <h2>JOIN US</h2>
         <form id="sign-up-form">
           <div class="input-box">
-            <input type="text"/>
-            <input type="text"/>
+            <input type="text" placeholder="Name" class="name"/>
+            <input type="text" placeholder="Email" class="email"/>
           </div>
-          <button class="form-submit-button" type="submit"></button>
+          <button class="form-submit-button" type="submit">GET INVOLVED</button>
         </form>
-        </section>
-    <section class="volunteer-contribute-footer">
-      <div class="footer-icon-container">
-        <img class="footer-logo" src="pictures/logo.jpeg">
-      </div>
-      <button class="footer-volunteer-button"></button>
-      <button class="footer-contribute-button"></button>
     </section>
-    <section class="designed-by">
-      <p>Created by Jun Yin</p>
-      <div></div>
-    </section>
+    <div class="footer-media-query">
+      <section class="volunteer-contribute-footer">
+        <div class="footer-icon-container">
+          <img class="footer-logo" src="pictures/logo.jpeg">
+        </div>
+        <button class="footer-volunteer-button">CONTRIBUTE</button>
+        <button class="footer-contribute-button">VOLUNTEER</button>
+      </section>
+      <section class="designed-by">
+        <p>Created by Jun Yin</p>
+        <div></div>
+      </section>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

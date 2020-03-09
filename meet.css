@@ -1,0 +1,206 @@
+.aboutme-portrait {
+  background-image: url(pictures/5a3786_c3ab13eccc06487f9aefdfa0f1c44637_mv2.jpeg);
+  background-size: contain;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.meetme-main-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  top: 4rem;
+  position: relative;
+
+}
+
+.meetme-portrait-container {
+  height: 20rem;
+}
+
+.aboutme-box-container {
+  margin: 1rem 0 1rem 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+
+
+.aboutme-box-container:nth-child(odd) {
+  background-color: #D2D6DB;
+  
+}
+
+.box-pic-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.box-3rd-pic {
+  height: 20vh;
+  width: 20vh;
+  margin: .5rem 0 .5rem 0;
+}
+
+.box-3rd {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #D2D6DB;
+} 
+
+.box-3rd-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.box-pic {
+  width: 100px;
+  height: 100px;
+  margin: .4rem 0 .4rem 0;
+}
+
+.aboutme-description:nth-child(even) {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-description:nth-child(odd) {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-2nd-description > h1 {
+  color: black;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.box-2nd-description > p {
+  color: #05519e;
+  font-size: .5rem;
+}
+
+.aboutme-description>h1, .aboutme-description>p  {
+  word-wrap: break-word;
+}
+
+.aboutme-description>h1 {
+  color: black;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.aboutme-description>p {
+  color: #05519e;
+  font-size: .5rem;
+}
+
+.footer-container {
+  top: 4rem;
+}
+
+@media only screen and (min-width: 400px) {
+  .aboutme-description>h1, .box-2nd-description > h1 {
+    font-size: 1.2rem;
+  }
+  .aboutme-description>p, .box-2nd-description > p {
+    font-size: .8rem;
+  }
+
+  .box-pic {
+    width: 25vh;
+    height: 25vh;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+  .aboutme-description>h1, .box-2nd-description > h1 {
+    font-size: 1.4rem;
+  }
+  .aboutme-description>p, .box-2nd-description > p {
+    font-size: 1rem;
+  }
+
+  .box-pic {
+    width: 30vh;
+    height: 30vh;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .aboutme-description>h1, .box-2nd-description > h1 {
+    font-size: 1.5rem;
+  }
+  .aboutme-description>p, .box-2nd-description > p {
+    font-size: 1rem;
+  }
+
+  .box-pic {
+    width: 35vh;
+    height: 35vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutme-description {
+    width: 30rem;
+  }
+
+  .box-container {
+    justify-content: space-evenly;
+  }
+
+  .aboutme-box-container {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .sign-up-media-query {
+    top: 3%;
+    left: 18%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .aboutme-description:nth-child(odd) {
+    justify-content: unset;
+  }
+  .aboutme-description>h1, .box-2nd-description > h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .aboutme-description>p {
+    font-size: 1.2rem;
+  }
+
+  .aboutme-description {
+    width: 35rem;
+}
+
+}
+
+@media only screen and (min-width: 1501px) {
+  .aboutme-description:nth-child(odd) {
+    justify-content: unset;
+  }
+}
