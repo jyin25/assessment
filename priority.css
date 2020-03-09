@@ -12,6 +12,16 @@
   position: relative;
 }
 
+.overlay-text > p {
+  height: 15rem;
+  width: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.priority-information > p {
+  line-height: 1.6;
+}
 
 .priority-portrait-container {
   height: 15rem;

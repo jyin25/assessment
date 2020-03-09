@@ -512,11 +512,15 @@ ul {
 .footer-volunteer-button {
   margin-top: 1rem;
   height: 3rem;
+  background-color: #3c3ed2;
+  font-weight: 800;
 }
 
 .footer-contribute-button {
   margin-top: 1rem;
   height: 3rem;
+  background-color: #3c3ed2;
+  font-weight: 800;
 }
 
 .footer-logo {
